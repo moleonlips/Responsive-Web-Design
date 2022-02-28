@@ -1,0 +1,400 @@
+/* root */
+* {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+}
+
+html {
+     font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+     cursor: pointer;
+}
+
+p{
+     font-family: serif;
+}
+
+/* button */
+.btn {
+     outline: none;
+     border: none;
+     padding: 0 5px;
+   }
+   
+   .btn:hover {
+     cursor: pointer;
+   }
+   
+
+/* text style */
+
+.text-center{
+     text-align: center;
+}
+
+.text-justify{
+     text-align: justify;
+}
+
+
+/* CUSTOM */
+
+.banner{
+     position: relative;
+     height: 100vh;
+     background-image: url(../img/header-bg.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+}
+
+.banner .header{
+     position: absolute;
+     top: 0;
+     width: 100%;
+     padding: 10px 90px;
+     display: flex;
+     justify-content: space-between;
+}
+
+.nav-logo{
+     width: 180px;
+}
+.nav-logo img{
+     width: 100%;
+     cursor: pointer;
+}
+.nav-bar{
+     color: #fff;
+     list-style: none;
+}
+.nav-bar li {
+     padding: 0 20px;
+     line-height: 90px;
+     display: inline-block;
+     cursor: pointer;
+}
+.welcome{
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     color: #fff;
+     text-align: center;
+}
+
+.welcome i {
+     font-size: 2em;
+     font-family: serif;
+ }
+.welcome h1 {
+     font-size: 3em;
+}
+.welcome .btn-tellme{
+     height: 50px;
+     background-color: rgb(240, 209, 38);
+     padding: 0 30px;
+     border-radius: 3px;
+     color: #fff;
+     font-weight: bold;
+}
+.content-item{
+     padding: 80px;
+     display: flex;
+     flex-direction: column;
+}
+.head-content{
+     text-align: center;
+}
+.head-content h2{
+     font-size: 2.5em;
+     margin-bottom: 15px;
+}
+.head-content p{
+     font-style: italic;
+     color: rgb(150, 150, 150);
+     margin-bottom: 40px;
+}
+.main-content{
+     display: flex;
+     justify-content: space-around;
+     flex-wrap: wrap;
+}
+
+.main-content .main-item{
+     width: 30%;
+     text-align: center;
+     margin-bottom: 20px;
+}
+
+.main-content .main-item .item-icon{
+     font-size: 3.5em;
+     background-color: rgb(255, 193, 22);
+     color: #fff;
+     padding: 20px;
+     margin-bottom: 10px;
+     display: inline-block;
+     border-radius: 50%;
+}
+.main-content .main-item h3{
+     line-height: 40px;
+     font-size: 1.5em;
+     color: #333;
+     margin-bottom: 10px;
+}
+.main-content .main-item p{
+     color: rgb(150, 150, 150);
+}
+
+.content-item-bg1 .main-content{
+     justify-content: space-between;
+}
+.content-item-bg1 .main-content .main-item{
+     width: 32%;     
+}
+.content-item-bg2 .main-content .main-item{
+     width: 20%;     
+}
+.content-item-bg{
+     background-color: rgba(235, 235, 235, 0.5);
+}
+.main-item .pfl-img{
+     width: 100%;
+}
+.main-item .pfl-des{
+     display: flex;
+     flex-direction: column;
+     background: #fff;
+     justify-content: center;
+     padding: 10px 0 20px;
+     margin-top: -3px;
+}
+.pfl-des h3{
+     margin-bottom: unset !important;
+}
+.main-item2 img{
+     border-radius: 50%;
+     border: 10px solid #ccc;
+}
+
+.bg-unset{
+     background-color: unset !important;
+}
+.team-info{
+     display: flex;
+     justify-content: space-around;
+     width: 100%;
+     margin-top: 10px;
+}
+
+
+.team-info a{
+     text-decoration: none;
+     width: 40px;
+     height: 40px;
+     line-height: 42px;
+     font-size: 1.5em;
+     color: #fff;
+     background-color: #333;
+     text-align: center;
+     border-radius: 50%;
+}
+.team-des{
+     width: 60%;
+     margin: 0px auto;
+     text-align: center;
+     color: rgb(150, 150, 150);
+}
+
+.four-logo{
+     display: flex;
+     height: 200px;
+     justify-content: space-around;
+     align-items: center;
+     padding: 0 90px;
+}
+.four-logo .four-logo-item{
+     width: 22.5%;
+     text-align: center;
+}
+
+.four-logo .four-logo-item img{
+     width: 100%;
+}
+
+.footer{
+     display: flex;
+     padding: 20px 90px 30px;
+     justify-content: space-between;
+     align-items: center;
+}
+
+.footer .team-info a{
+     margin: 0 10px;
+}
+
+.footer > p{
+     font-family: Arial, Helvetica, sans-serif;
+     font-weight: 100;
+     color: #333;
+     font-size: 0.9em;
+}
+
+.footer div span{
+     color: goldenrod;
+     padding-left: 20px;
+}
+
+.modile-header{
+     height: 50px;
+     position: fixed;
+     top: 0%;
+     width: 100%;
+     background-color: #333;
+     z-index: 11;
+}
+.modile-log{
+     position: absolute;
+     left: 20px;
+     height: 30px;
+     top: 50%;
+     transform: translateY(-50%);
+}
+.modile-log img{
+     height: 100%;
+}
+.modile-header .btn-mobile-nav{
+     position: absolute;
+     right: 10px;     
+     top: 50%;
+     transform: translateY(-50%);
+     height: 30px;
+     padding: 0 10px;
+     background-color: rgb(240, 209, 38);
+     color: #fff;
+     border-radius: 3px;
+     font-weight: bold;
+}
+
+/* END CUSTOM */
+
+/* mobile */
+@media all and (max-width: 46.1875em){
+     .banner{
+          margin-top: 50px;
+     }
+     .banner .header{
+          display: none;
+     }
+     .welcome {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -66%);
+          color: #fff;
+          text-align: center;
+      }
+     .welcome i{
+          font-size: 1.5em;
+     }
+     .main-content{
+          flex-direction: column;
+          align-items: center;
+     }
+     .main-content .main-item {
+          width: 100%;
+          text-align: center;
+          margin-bottom: 20px;
+     }
+     .content-item.content-item:first-child{
+          padding-left: 0;
+          padding-right: 0;
+     }
+     .content-item-bg1 .main-content .main-item {
+          width: 100%;
+     }
+     .content-item-bg2 .main-content .main-item {
+          width: 70%;
+     }
+     .four-logo{
+          flex-direction: column;
+          height: auto;
+          padding-top: 10px;
+     }
+     .team-des{
+          width: 100%;
+     }
+     .four-logo .four-logo-item {
+          width: 40%;
+          text-align: center;
+      }
+     .four-logo-item img{
+          width: 100%;
+     }
+     .footer{
+          flex-direction: column;
+     }
+     .footer p{
+          margin-bottom: 10px;
+     }
+     div .team-info{
+          margin-bottom: 20px;
+     }
+     .footer div span{
+          padding: 10px;
+     }
+}
+
+
+/* tablet */
+@media all and (min-width: 46.25em) and (max-width: 64em) {
+     .banner{
+          margin-top: 50px;
+     }
+     .banner .header{
+          display: none;
+     }
+     .welcome {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -66%);
+          color: #fff;
+          text-align: center;
+      }
+     .welcome i{
+          font-size: 1.5em;
+     }
+     .content-item-bg1 .main-content .main-item {
+          width: 48%;
+     }
+     .content-item-bg2 .main-content .main-item {
+          width: 30%;
+     }
+     .flex-col{
+          flex-direction: column !important;
+          align-items: center;
+     }
+     .footer{
+          flex-direction: column;
+     }
+     .footer p{
+          margin-bottom: 10px;
+     }
+     div .team-info{
+          margin-bottom: 20px;
+     }
+     .footer div span{
+          padding: 10px;
+     }
+}
+   /* PC */
+@media all and (min-width: 64em) {
+     .modile-header{
+          display: none;
+     }
+}
+   
